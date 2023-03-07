@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(191, 159, 193);
+}
+h1{
+    color: rgb(50, 58, 98);
+}
+h2{
+    color: rgb(48, 45, 45);
+}
+p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

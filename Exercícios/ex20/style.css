@@ -1,0 +1,13 @@
+div > p{
+    display: none;
+}
+#divsessao{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+}
+div:hover > p{
+    display: block;
+    background-color: aqua;
+}

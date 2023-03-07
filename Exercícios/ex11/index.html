@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    
+    <h1>Imagem Dinâmica</h1>
+    <p></p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="">
+    </picture>
+
+ <!--  <audio src="midia/audioyt.mp3" controls></audio> ADICIONAR AUDIO NORMAL--> 
+    
+    <audio preload="metadata" controls>
+        <source src="midia/audioyt.mp3" type="audio/mpeg">
+        <source src="midia/audioyt.ogg" type="audio/ogg">
+        <source src="midia/audioyt.wav" type="audio/wav"> <!-- SE UM NÃO CARREGA TENTA O PRÓXIMO! COMEÇA TENTANTO DE CIMA PARA BAIXO! -->
+        <p>Infelizmente seu áudio não pôde ser executado <a download="audioyt.mp3" type="application/mpeg" href="midia/audioyt.mp3">clique aqui</a> para fazer o download!</p>
+    </audio>
+
+</body>
+</html>

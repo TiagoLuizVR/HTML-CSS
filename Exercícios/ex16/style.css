@@ -1,0 +1,22 @@
+main{
+    margin: auto;
+    width: 600px;
+    background-color: #45C4B0;
+    padding: 4px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px #01203095;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color: #012030;
+    text-shadow: 1px 1px 3px black;
+}
+html{
+    background-image: linear-gradient(to right, #DAFDBA, #9AEBA3);
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
