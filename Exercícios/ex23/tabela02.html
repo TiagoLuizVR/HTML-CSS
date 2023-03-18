@@ -10,8 +10,13 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         table {
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            margin: auto;
+        }
+        thead{
+            position: sticky;
+            top: -1px;
         }
         td, th{
             border: 1px solid black;
@@ -24,16 +29,26 @@
             background-color: gray;
             color: white;
         }
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabelas Grandes</h1>
+    <h1 style="text-align: center;">Tabelas Grandes</h1>
 
     <table>
+        <caption>POPULAÇÃO DOS ESTADOS BRASILEIROS</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 70px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -147,7 +162,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
     </table>
