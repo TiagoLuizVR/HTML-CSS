@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="inasc">Ano de Nascimento</label>
+            <input type="number" name="nasc" id="inasc" min="1900" max="2020" value="2000" oninput="calcAge()">
+        </p>
+        <p>
+            <label for="iage">Sua idade: </label>
+            <output id="iage">0</output>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <script>
+        
+        function calcAge() {
+            let atual = new Date().getFullYear()
+            iage.innerHTML = Number(atual) - Number(inasc.value)
+        }
+
+    </script>
+
+</body>
+</html>
