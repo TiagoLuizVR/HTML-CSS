@@ -1,0 +1,33 @@
+@charset "UTF-8;";
+
+/* Estilo para TELA */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+header h1 {
+    background-color: gray;
+    text-align: center;
+}
+header menu {
+    background-color: lightgray;
+}
+li {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightblue;
+    margin-left: 5px;
+}
+main article {
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    text-align: justify;
+    padding: 10px;
+}
+main article p {
+    text-indent: 25px;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8;";
+
+/* Estilo para IMPRESSORA */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+menu {
+    display: none;
+}
+main article {
+    width: 100%;
+    padding: 25px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+main article::after {
+    content: 'O site impresso é encontrado em www.site.com.br';
+}
