@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
     
@@ -36,11 +37,19 @@
         </article>
     </main>
     <script>
+         function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                opcoes.style.display = 'block'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+
         function burguerMenu() {
             if (opcoes.style.display == 'block'){
-                opcoes.style.display = 'none';
+                opcoes.style.display = 'none'
             } else {
-                opcoes.style.display = 'block';
+                opcoes.style.display = 'block'
             }
         }
     </script>
