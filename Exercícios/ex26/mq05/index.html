@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Queries</title>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-    <menu>
+    
+    <i id="burguer" class="material-icons" onclick="burguerMenu()">menu</i>
+
+    <menu id="opcoes">
         <ul>
             <li><a href="#">Opção 1</a></li>
             <li><a href="#">Opção 2</a></li>
@@ -31,5 +35,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni tempora incidunt quaerat blanditiis repellendus eum nihil distinctio praesentium maiores obcaecati, fuga, asperiores explicabo ad expedita corporis, assumenda labore quibusdam aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa esse animi, dolore nostrum voluptatibus sequi omnis! Officia natus corrupti veniam unde hic placeat quas quod, consequuntur recusandae, nihil, nesciunt quaerat?</p>
         </article>
     </main>
+    <script>
+        function burguerMenu() {
+            if (opcoes.style.display == 'block'){
+                opcoes.style.display = 'none';
+            } else {
+                opcoes.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
