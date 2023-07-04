@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    background-color: black;
+}
+
+/* ESTILOS DENTRO DO HTML TAMBÉM */
+
+#container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 5px;
+
+    justify-content: center;
+    align-content: center;
+    
+    justify-items: center;
+    align-items: end;
+}
+#container > div {
+    background-color: lightblue;
+    height: 30px;
+    width: 30px;
+}
