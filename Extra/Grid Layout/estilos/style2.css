@@ -7,22 +7,18 @@
 }
 header {
     grid-area: h;
-    /* height: 100px; */
     background-color: aqua;
 }
 main {
     grid-area: m;
-    /* height: 100px; */
     background-color: blue;
 }
 aside {
     grid-area: a;
-    /* height: 100px; */
     background-color: blueviolet;
 }
 footer {
     grid-area: f;
-    /* height: 100px; */
     background-color: yellowgreen;
 }
 
