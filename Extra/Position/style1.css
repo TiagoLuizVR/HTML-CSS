@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+html {
+    height: 2000px;
+}
+div {
+    height: 70px;
+    background-color: #CCC;
+    border: 2px solid black;
+}
+.relative {
+    background-color: aqua;
+    position: relative;
+}
+div.diferente {
+    top: 15px;
+    left: 10px;
+}
+.absolute {
+    background-color: blueviolet;
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    width: 70px;
+}
+.fixed {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    background-color: chartreuse;
+}
+.sticky {
+    position: sticky;
+    background-color: yellow;
+    top: 10px;
+    left: 0px;
+}
+.fixed2 {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    background-color: black;
+    color: white;
+}
