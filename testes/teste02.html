@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor de campo js</title>
+</head>
+<body>
+    <label for="iano">Ano nascimento: </label>
+    <input type="number" value="10" name="ano" id="iano">
+    <input type="button" value="Enviar" onclick="consulta()">
+    <div id="show">
+
+    </div>
+
+    <script>
+        function consulta() {
+            var caixa = document.getElementById('show')
+            var year = Number(window.document.getElementById('iano').value)
+
+        caixa.innerHTML = ('Olá: '+ year)
+        }
+    </script>
+</body>
+</html>
