@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação 1</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #d1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid blue;
+            border-right: none;
+            border-bottom: none;
+
+            animation: carregar 1s ease infinite;
+        }
+        @keyframes carregar {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+    </div>
+</body>
+</html>
