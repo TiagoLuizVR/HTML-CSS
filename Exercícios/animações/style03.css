@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: black url(https://i.pinimg.com/736x/be/31/32/be31320c46759dfe4629543f53325b5e.jpg);
+    height: 100%;
+
+    animation: estrelas 300s linear infinite alternate;
+}
+#montanha {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+#degrade {
+    height: 100vh;
+    background-image: linear-gradient(to top, #0000ff67, transparent);
+}
+@keyframes estrelas {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
